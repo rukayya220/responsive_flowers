@@ -15,6 +15,11 @@
   font-style: normal;
 }
 /* shared style */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .display-flex{
   display: flex;
 }
@@ -52,12 +57,70 @@
  gap: 5px;
  color: black;
 }
- /* banner styles */
+ /* banner styles */ 
+ .banner-content{
+    max-width: 550px;
+ }
+.banner{
+    align-items: end;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+     margin: 0px;
+}
+.banner-description, .plant-description {
+    font-size: 1.3rem;
+}
 
 
-
-
-
+/* plant section styles */
+.plant-title{
+    font-size:3.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+.plant-description{
+   margin-bottom: 30px;
+}
+.plant-content{
+    text-align: center;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.card{ 
+    text-align: center;
+}
+.card img{
+width: 100%;
+}
+.cart-price{
+    font-size: 1.3rem;
+    font-weight:800;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.card-name{
+    font-weight: 550;
+     font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+} 
+.btn-primary{
+    color: white;
+    background-color: #E95A08;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px 50px;
+    width: 100%;
+}
 
 
 /* responsive media query */
