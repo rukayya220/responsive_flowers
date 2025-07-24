@@ -19,7 +19,9 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
-
+main > section{
+    margin-top: 130px;
+}
 .display-flex{
   display: flex;
 }
@@ -36,7 +38,10 @@ main{
 .bg-light{
   background-color:#F5F8FF;
 }
-
+.banner-description, .plant-description, .plant-lover-description {
+    font-size: 1.3rem;
+}
+/* navbar related styles */
 .navbar{
  justify-content: space-between;
  align-items: center;
@@ -72,13 +77,8 @@ main{
     font-weight: 700;
      margin: 0px;
 }
-.banner-description, .plant-description {
-    font-size: 1.3rem;
-}
-
-
 /* plant section styles */
-.plant-title{
+.plant-title, .Deals-title, .plant-lover-title{
     font-size:3.1rem;
     font-weight: 700;
     margin: 0;
@@ -86,7 +86,7 @@ main{
 .plant-description{
    margin-bottom: 30px;
 }
-.plant-content{
+.plant-content, .Deals-content{
     text-align: center;
 }
 .card-container{
@@ -121,8 +121,87 @@ width: 100%;
     padding: 20px 50px;
     width: 100%;
 }
+/* plant lover related styles */
+.plant-lovers{
+  gap: 150px;
+}
+.plant-lover-title{
+    margin-top: 10px;
+}
+
+.plant-lover-description li{
+    margin-top: 50px;
+    line-height: 30px; 
+}
+.images{
+    position: relative; 
+    max-width: 540px;
+}
+.badge{
+    width: 280px;
+    position: absolute;
+}
 
 
+/* latest Deals section styles */
+.Deals-description{
+    margin-bottom: 30px;
+}
+.left{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   border: 2px solid green;
+   width: 500px;
+ 
+}
+.left-card{
+ background-repeat: no-repeat;
+ width: 370px;
+ height: 200px;
+ border-radius: 18px;
+}
+.right-card{
+background-repeat: no-repeat;
+ width: 750px;
+ height: 420px;
+ /* margin-left: 70px; */
+  border-radius: 18px;
+  /* border: 2px solid rebeccapurple; */
+}
+.text-title{
+   font-size:1.25rem;
+    color: white;
+   font-weight: 700;
+   margin: 0;
+}
+a{
+    color: white;
+    font-size: 1rem;
+}
+.text{
+    margin-top: 90px;
+    text-align: center;
+    
+}
+.text-z {
+    margin-top: 150px;
+    text-align: center;
+}
+.zabo{
+color: white;
+font-size: 2.3rem;
+margin: 0;
+}
+.zebo-a{
+    font-size: 1.7rem;
+}
+.image-container{
+    border: 2px solid tomato;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* margin:50px 60px ; */
+   
+}
 /* responsive media query */
 @media screen and (max-width:576px) {
     
