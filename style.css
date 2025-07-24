@@ -254,3 +254,42 @@ margin: 0;
       cursor: pointer;
       
     }
+    /* footer sections */
+    
+    .footer{
+        background-color: rgb(255, 255, 255);
+          padding: 60px 40px;
+    }
+.footer-container{
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    gap: 50px;
+}
+.f-logo{
+    width:135px ;
+}
+.f-description{
+font-size: 1.3rem;
+line-height: 1.2;
+}
+.footer-left{
+    max-width:300px;
+}
+.footer-link{
+    gap: 80px;
+    }
+.footer-link ul{
+list-style: none;
+
+}  
+.footer-link ul li{
+    margin-bottom: 20px;
+    font-size: 1rem;
+
+}
+.footer-icons{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
