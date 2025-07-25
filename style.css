@@ -387,6 +387,9 @@ list-style: none;
 .plant-lover-description li{
  margin:10px;
 }
+.btn-primary{
+    padding: 15px 20px;
+}
 .latest-section{
     margin: 10px;
 }
