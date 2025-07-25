@@ -15,6 +15,7 @@
   font-style: normal;
 }
 /* shared style */
+
 * {
   box-sizing: border-box;
 }
@@ -23,7 +24,7 @@ main{
     margin: 0 auto;
 }
 main > section{
-    margin-top: 130px;
+    margin-top: 140px;
 }
 .display-flex{
   display: flex;
@@ -41,15 +42,19 @@ main > section{
 .bg-light{
   background-color:#F5F8FF;
 }
-.banner-description, .plant-description, .plant-lover-description {
+.banner-description,
+.plant-description,
+.plant-lover-description {
     font-size: 1.3rem;
 }
 /* navbar related styles */
 .navbar{
+   
  justify-content: space-between;
  align-items: center;
  max-width: 1440px;
- margin: 0 auto;
+ margin: 0 30px 0 50px;
+margin-bottom: 130px;
 }
 .nav-item{
     list-style: none;
@@ -73,7 +78,7 @@ main > section{
     align-items: end;
     justify-content: space-between;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 80px 50px 80px;
 }
 .banner-title{
     font-size: 4rem;
@@ -81,6 +86,10 @@ main > section{
      margin: 0px;
 }
 /* plant section styles */
+.plant{
+    margin: 0 30px;
+}
+
 .plant-title, .Deals-title, .plant-lover-title{
     font-size:3.1rem;
     font-weight: 700;
@@ -91,6 +100,7 @@ main > section{
 }
 .plant-content, .Deals-content{
     text-align: center;
+    margin-bottom: 55px;
 }
 .card-container{
     display: grid;
@@ -125,8 +135,8 @@ width: 100%;
     width: 100%;
 }
 /* plant lover related styles */
-.plant-lovers{
-  gap: 150px;
+.plant-lovers {
+    margin: 150px 30px 50px 30px;
 }
 .plant-lover-title{
     margin-top: 10px;
@@ -136,76 +146,91 @@ width: 100%;
     margin-top: 50px;
     line-height: 30px; 
 }
+.plant-lover-description{
+    list-style-type: disc;
+}
 .images{
     position: relative; 
-    max-width: 540px;
+    height: 100%;
+    width: 100%;
+    
 }
 .badge{
     width: 280px;
     position: absolute;
+    margin-left: 355px;
+    margin-top: -120px;
+    filter: drop-shadow(-1px 5px 3px rgb(107, 106, 106 ));
+   
 }
-
-
 /* latest Deals section styles */
-
-.Latest-Deals{
-    margin-bottom: 100px;
-}
-.Deals-description{
-    margin-bottom: 30px;
+.image-container{
+   display: flex;
+   gap: 25px;
+   /* width: 1440px; */
+   margin: 0 150px;
 }
 .left{
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
-   border: 2px solid green;
-   width: 500px;
- 
-}
-.left-card{
- background-repeat: no-repeat;
- width: 370px;
- height: 200px;
- border-radius: 18px;
-}
-.right-card{
-background-repeat: no-repeat;
- width: 750px;
- height: 420px;
-  border-radius: 18px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 
 }
-.text-title{
-   font-size:1.25rem;
-    color: white;
-   font-weight: 700;
-   margin: 0;
+.left img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
 }
-a{
-    color: white;
-    font-size: 1rem;
+
+
+.right-card{
+    position: relative;
 }
-.text{
-    margin-top: 90px;
-    text-align: center;
+.right-card img{
+    border-radius: 8px;
+    max-width: 753px;
+}
+.left-card{
+    position: relative;
     
 }
-.text-z {
-    margin-top: 150px;
+.text{
+    position: absolute;
     text-align: center;
+    justify-content: center;
+    color: white;
+    inset: 0;
+   align-content: center;
 }
-.zabo{
+.text a{
+     text-decoration: underline;
+}
+ .text-z{
+    position: absolute;
+    text-align: center;
+    color: white;
+ align-items: center;
+    justify-content: center;
+    inset: 0;
+   align-content: center;
+ }
+ .zebo-a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.zabo {
 color: white;
 font-size: 2.3rem;
 margin: 0;
+font-weight: 700;
 }
-.zebo-a{
-    font-size: 1.7rem;
+.text-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+     
 }
-.image-container{
-    border: 2px solid tomato;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
+
 /* join section styles */
     .join-section {
       background-image: url('assets/news-letter-bg.png');
@@ -218,16 +243,18 @@ margin: 0;
       align-items: center;
       text-align: center;
       padding: 0 20px;
+      margin-top: 100px;
     }
 
 
 .join-title{
     color: white;
-    font-size: 3.1rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 700; 
+    margin-bottom: 20px;
 }
 .join-content{
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
 
 }
@@ -242,7 +269,8 @@ margin: 0;
     border: none;
     width: 60%;
     min-width: 200px;
-     outline: none;
+    outline: none;
+    background-color: white;
 }
   .join-form button {
       padding: 12px 20px;
@@ -259,6 +287,7 @@ margin: 0;
     .footer{
         background-color: rgb(255, 255, 255);
           padding: 60px 40px;
+          
     }
 .footer-container{
     justify-content: space-between;
@@ -292,4 +321,155 @@ list-style: none;
     display: flex;
     gap: 20px;
     align-items: start;
+}
+@media screen and (max-width:576px) {
+
+    .nav-link{
+        display: none;
+    }
+    .navbar{
+        margin: 10px 5px 10px 10px;
+    }
+    .navbar img{
+    width: 100px;
+    height: 55px;
+    }
+    .banner-title{
+        margin-top: 10px;
+        font-size: 24px;
+
+    }
+     .banner-description{
+        margin-top: 10px;
+        font-size: 14px;
+     }
+     .plant{
+        margin: 10px 5px 10px 5px;
+     }
+     .plant-title{
+        font-size: 24px;
+     }
+     .plant-description{
+        font-size: 14px ;
+     }
+     .card-name, .cart-price{
+        font-size: 16px;
+     }
+     .card-container{
+        margin: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.badge{
+    display: none;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    margin: -10px;
+}
+.plant-lovers{
+    flex-direction: column;
+    /* margin-left: 20px; */
+    margin-top: 50px 20px 50px 20px;
+}
+.plant-lover-content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.plant-lover-title{
+    font-size: 24px;
+}
+.plant-lover-description {
+    font-size: 14px;
+    list-style-type: disc;
+}
+.plant-lover-description li{
+ margin:10px;
+}
+.latest-section{
+    margin: 10px;
+}
+.image-container{
+    flex-direction:column;
+    width: 100%;
+    margin:0px;
+   
+}
+.right-card img{
+    width: 100%;
+}
+.Deals-content{
+    margin-bottom: 30px;
+}
+.Deals-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.Deals-description{
+    font-size: 14px;
+    margin-bottom:20px;
+}
+.text{
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+   align-content: center;
+   
+}
+.text-z{
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+   align-content: center;
+}
+.text-title,.zabo{
+    font-size: 20px;
+    font-weight: 700;
+}
+.zebo-a{
+    font-size: 16px;
+     font-weight: 500;
+}
+.join-title{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    
+}
+
+
+.footer-container{
+    flex-direction: column;
+}
+.footer-link{
+    flex-direction: column;
+    
+}
+.f-logo{
+   margin-bottom: 15px;
+}
+ .footer-link ul{
+    margin-bottom: -50px; 
+    margin-top: -30px;
+}
+.footer-icons{
+    margin-top: 30px;
+}
+.f-description{
+    font-size: 1rem;
+}
+ #shopping-cart img {
+    width: 24px;
+    height: 24px;
+  }
+.banner{
+    flex-direction:column-reverse;
+    margin:20px 10px 80px;
+   
+}
+ .banner-content{
+    width:100%;
+    margin-top: 10px;
+ }
+ 
 }
